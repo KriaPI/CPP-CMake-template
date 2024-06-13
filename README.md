@@ -13,5 +13,11 @@ To build with GCC, type the following (line-by-line):
     cd build
     cmake --build .
 
+## Useful commands
+Format source and header files of all CMake targets:
+
+    cmake --build build --target=format_project
+
+
 ## Modifying the template
 Use CMake's `add_executable` and `add_library` for adding source files. To define header search paths for a compiler, in other words include directories, use `target_include_directories`. 
