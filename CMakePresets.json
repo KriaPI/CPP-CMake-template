@@ -1,40 +1,63 @@
 {
-    "version": 4,
+    "version": 6,
     "configurePresets": [
         {
-            "name": "ci-enable-all",
+            "name": "base-release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Release"
+            },
             "binaryDir": "./build",
             "hidden": true
         },
         {
-            "name": "MinGW",
+            "name": "base-debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Release"
+            },
+            "binaryDir": "./build",
+            "hidden": true
+        },
+        {
+            "name": "mingw-release",
             "displayName": "MinGW-w64 makefiles",
-            "inherits": ["ci-enable-all"],
+            "inherits": ["base-release"],
+            "generator": "MinGW Makefiles"
+        },
+        {
+            "name": "mingw-debug",
+            "displayName": "MinGW-w64 makefiles",
+            "inherits": ["base-debug"],
             "generator": "MinGW Makefiles"
         }, 
         {
-            "name": "MSVC22",
-            "displayName": "Visual studio 17 2022",
-            "inherits": ["ci-enable-all"],
-            "generator": "Visual Studio 17 2022"
-        },
-        {
-            "name": "GCC",
+            "name": "unix-release",
             "displayName": "Unix Makefiles",
-            "inherits": ["ci-enable-all"],
+            "inherits": ["base-release"],
             "generator": "Unix Makefiles"
         },
         {
-            "name": "Clang",
+            "name": "unix-debug",
             "displayName": "Unix Makefiles",
-            "inherits": ["ci-enable-all"],
+            "inherits": ["base-debug"],
             "generator": "Unix Makefiles"
         },
         {
-            "name": "Ninja",
+            "name": "ninja-release",
             "displayName": "Ninja",
-            "inherits": ["ci-enable-all"],
+            "inherits": ["base-release"],
             "generator": "Ninja"
+        },
+        {
+            "name": "ninja-debug",
+            "displayName": "Ninja",
+            "inherits": ["base-debug"],
+            "generator": "Ninja"
+        },
+        {
+            "name": "msvc2022",
+            "displayName": "Visual studio 17 2022",
+            "inherits": ["base-release"],
+            "generator": "Visual Studio 17 2022"
         }
     ]
 }
