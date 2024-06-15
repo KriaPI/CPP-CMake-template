@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "*.build": "meson",
-        "iostream": "cpp"
-    }
-}
