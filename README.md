@@ -14,10 +14,13 @@ To build with GCC, type the following (line-by-line):
     cmake --build .
 
 ## Useful commands
-Format source and header files of all CMake targets:
+Format files of all CMake targets with Clang-format:
 
-    cmake --build build --target=format_project
+    cmake --build build --target=format
 
+Run static analysis on files using Clang-tidy:
+
+    cmake --build build --target=check
 
 ## Modifying the template
 Use CMake's `add_executable` and `add_library` for adding source files. To define header search paths for a compiler, in other words include directories, use `target_include_directories`. 

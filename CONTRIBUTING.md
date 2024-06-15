@@ -3,7 +3,7 @@
 
         Explanation
 
-Categories include: `Feature`, `Setup`, `BugFix`, `Document`, `Refactor`, `Clean`, `Format` and `WIP`. The description and category should not exceed 50 characters and the letter after `:` should not be capitalised. Use past verb tense. Add a new line after the description if a paragraph for further explanations is needed.
+Categories include: `Feature`, `Setup`, `BugFix`, `Document`, `Refactor`, `Clean`, `Format` and `WIP`. The description and category together should not exceed 50 characters and the letter after `:` should not be capitalised. Use past verb tense. Add a new line after the description if a paragraph for further explanations is needed.
 
 ### Example
     Bugfix: resolved super important issue 
