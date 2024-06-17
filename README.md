@@ -14,6 +14,10 @@ To build with GCC, type the following (line-by-line):
     cmake --build .
 
 ## Useful commands
+Run tests
+
+    ctest --test-dir build
+
 Format files of all CMake targets with Clang-format:
 
     cmake --build build --target=format

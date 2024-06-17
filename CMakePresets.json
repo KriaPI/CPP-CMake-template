@@ -1,10 +1,11 @@
 {
-    "version": 6,
+    "version": 4,
     "configurePresets": [
         {
             "name": "base-release",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE":"Release"
+                "CMAKE_BUILD_TYPE":"Release",
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
             },
             "binaryDir": "./build",
             "hidden": true
@@ -12,7 +13,8 @@
         {
             "name": "base-debug",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE":"Release"
+                "CMAKE_BUILD_TYPE":"Debug",
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
             },
             "binaryDir": "./build",
             "hidden": true
