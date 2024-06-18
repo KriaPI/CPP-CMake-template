@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.24)
 project(Template LANGUAGES CXX)
 enable_testing()
 
-# Set C++ language standard and required variables.
+# Set C++ language standard and required variables
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(defaults)
-project_set_defaults()
+include(default_compiler_flags)
 
 # Add packages
 find_package(GTest CONFIG REQUIRED)
