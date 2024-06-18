@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "gtest",
-    "fmt"
+    "gtest"
   ]
 }

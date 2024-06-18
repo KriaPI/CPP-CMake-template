@@ -3,7 +3,7 @@
 
         Explanation
 
-Categories include: `Feature`, `Setup`, `BugFix`, `Document`, `Refactor`, `Clean`, `Format` and `WIP`. The description and category together should not exceed 50 characters and the letter after `:` should not be capitalised. Use past verb tense. Add a new line after the description if a paragraph for further explanations is needed.
+Categories include: `Feature`, `Remove`, `Setup`, `BugFix`, `Document`, `Refactor`, `Format` and `WIP`. The description and category together should not exceed 50 characters and the letter after `:` should not be capitalised. Use past verb tense. Add a new line after the description if a paragraph for further explanations is needed.
 
 ### Example
     Bugfix: resolved super important issue 
@@ -12,7 +12,7 @@ Categories include: `Feature`, `Setup`, `BugFix`, `Document`, `Refactor`, `Clean
 
 ### Notes
 The category should be based on the commit message's main purpose. 
-Reserve the `WIP` category for pushing work that is unfinished. `Clean` should be used when only deleting files. `Format` should be used when formatting code. `Document` should be used whenever documentation is added, removed or edited. 
+Reserve the `WIP` category for pushing work that is unfinished. `Remove` should be used when removing things such as files, features or dependencies. `Format` should be used when formatting code. `Document` should be used whenever documentation is added, removed or edited.
 
 ## Branch rules
     Category/description
