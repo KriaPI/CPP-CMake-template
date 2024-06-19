@@ -6,6 +6,7 @@ enable_testing()
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(defaults)
 include(default_compiler_flags)
+include(sanitizers)
 
 # Add packages
 find_package(GTest CONFIG REQUIRED)
