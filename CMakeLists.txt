@@ -12,7 +12,7 @@ include(coverage)
 # Add packages
 find_package(GTest CONFIG REQUIRED)
 
-# Add directories and sources
+# Add subdirectories
 add_subdirectory(source)
 add_subdirectory(test)
 
